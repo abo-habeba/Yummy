@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Yummy</title>
+</head>
+<body>
+
+  <div class="loading-min">
+    <div class="loading  position-absolute">
+      <i class="fa fa-spinner fa-spin fa-4x"></i>
+    </div>
+  </div>
+
+  <div class="nav-min">
+    <div class="nav-tab-menu open-menu">
+      <div class="nav-item item-toggle">
+        <ul>
+          <li class="item1">
+            <a id="search" class="nav-category">Search</a>
+          </li>
+          <li class="item2">
+            <a id="categories" class="nav-category">Categories</a>
+          </li>
+          <li class="item3">
+            <a id="Area" class="nav-category">Area</a>
+          </li>
+          <li class="item4">
+            <a id="Ingredients" class="nav-category">Ingredients</a>
+          </li>
+          <li class="item5">
+            <a id="contact" class="nav-category">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-social-item">
+        <a><i class="fab fa-facebook-f"></i></a>
+        <a><i class="fab fa-twitter"></i></a>
+        <a><i class="fas fa-globe"></i></a>
+        <div class="pt-3 ps-3 text-white">
+          <span>Copyright آ© 2019 All Rights Reserved.</span>
+        </div>
+      </div>
+    </div>
+    <div class="strip-header-nav fixed-left">
+
+      <div class="cursor-pointer strip-logo w-75">
+        <img class="img-fluid" src="images/logo.png" />
+      </div>
+
+      <div class="cursor-pointer toggel-menu">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+
+      <div class="strip-social-icon">
+        <div class="strip-lang">
+          <span>
+            <i class="fas fa-globe"></i>
+          </span>
+        </div>
+        <div class="strip-share">
+          <span>
+            <i class="fas fa-share-alt"></i>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="bodyy bg-dark">
+    <div class="box-search bg-dark position-fixed">
+      <div class="container px-5">
+        <div class="row px-5 py-md  bg-dark"">
+              <div class=" col-md-6 py-2">
+          <input oninput="valueBtnName(this.value);" id="searchInput" class="form-control "
+            placeholder="Search By Name">
+        </div>
+        <div class="col-md-6 py-2">
+          <input oninput="valueBtLetter(this.value);" id="letter" class="form-control " type="text" maxlength="1"
+            placeholder="search By First Letter...">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="box-loading">
+      <div class="loading  position-absolute">
+        <i class="fa fa-spinner fa-spin fa-4x"></i>
+      </div>
+    </div>
+    <div class="container p-5">
+      <div id="rowData" class="row p-5 py-md pt-xs  bg-dark">
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="js/all.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/master.js"></script>
+</body>
+
+</html>
