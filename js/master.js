@@ -475,7 +475,6 @@ let nameValid = false,
 //    show hide password
 
 function showHidePassword(){
-  console.log('box clickd');
     $('.show-pass').toggle();
     $('.hide-pass').toggle();
     if ($('.btn-pass').attr("type" ) == "password") {
